@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-// just for printf-Function to include it 
+// just for printf-Function, include it 
 #include <stdio.h>
 
 
