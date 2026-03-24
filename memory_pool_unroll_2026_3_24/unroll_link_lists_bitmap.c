@@ -1,7 +1,9 @@
-#include <stdio.h>
-
 #include <stdlib.h>
 #include <stdint.h>
+
+// just for printf-Function to include it 
+#include <stdio.h>
+
 
 #define SLABS 8
 
@@ -249,6 +251,11 @@ void FreeBlocks(Block* b){
     }
 }
 
+
+
+
+
+
 void Percentage(Block* b) {
     while (b) {
         int cnt = __builtin_popcount(b->bits);
@@ -256,10 +263,6 @@ void Percentage(Block* b) {
         b = b->next;
     }
 }
-
-
-
-
 
 #ifndef TEST_
 int main(){
